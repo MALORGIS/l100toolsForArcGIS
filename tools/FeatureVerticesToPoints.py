@@ -3,13 +3,36 @@
 import arcpy
 import os
 
+"""
+import locale
+#set locale
+loctext = locale.setlocale(locale.LC_ALL, "")
+"""
+
+import gettext
+
+
+_ = gettext.translation(
+        domain='l100tools',
+        localedir=os.path.join(os.path.dirname(
+              os.path.dirname(__file__)), 'locale'),
+        fallback=True).ugettext
+"""
+domain = 'l100tools'
+localedir = os.path.join(os.path.dirname(
+              os.path.dirname(__file__)), 'locale')
+
+t = gettext.translation(domain, localedir, ['ja'])
+t.install()
+"""
+
 #フィーチャの頂点 → ポイント
 class FeatureVerticesToPoints(object):
 
   def __init__(self):
 
-    self.label = "Feature Vertices To Points"
-    self.description = "Creates a feature class containing points generated from specified vertices or locations of the input features."
+    self.label = _("Feature Vertices To Points")
+    self.description = _("Creates a feature class containing points generated from specified vertices or locations of the input features.")
 
     self.category = "TransformationShapes"
     self.canRunInBackground = False
