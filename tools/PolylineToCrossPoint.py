@@ -8,9 +8,7 @@ class PolylineToCrossPoint(object):
 
   def __init__(self):
     self.label = _("Polyline To CrossPoint")
-    self.description = _("""
-Creates a Point feature class from specified Polyline features.
-All cross Features are used and clear Selection.""")
+    self.description = _("Creates a Point feature class from specified Polyline features.All cross Features are used and clear Selection.")
 
     self.category = _("TransformationShapes")
     self.canRunInBackground = False

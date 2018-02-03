@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2018-01-28 17:00+0900\n"
-"PO-Revision-Date: 2018-02-3 17:20+0900\n"
+"PO-Revision-Date: 2018-02-03 19:37+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -16,13 +16,14 @@ msgstr ""
 "Language: ja\n"
 "X-Generator: Poedit 2.0.6\n"
 
-
 msgid "TransformationShapes"
 msgstr "形状変更"
 
 msgid "Fields"
 msgstr "フィールド(属性)"
 
+msgid "DataManagement"
+msgstr "データ管理"
 
 msgid "Feature Vertices To Points"
 msgstr "フィーチャの頂点→ポイント"
@@ -72,7 +73,6 @@ msgstr "ランダム ポイント"
 msgid "Creates a specified number of random point features. Random points can be generated in a inside polygon features."
 msgstr "指定された数のランダムポイントフィーチャを作成します。指定したポリゴンフィーチャ内にランダムな点を生成します."
 
-
 msgid "Spider Diagrams"
 msgstr "スパイダーダイアグラム"
 
@@ -83,11 +83,25 @@ msgid "Erase"
 msgstr "イレース"
 
 msgid "Creates a feature class by overlaying the Input Features with the polygons of the Erase Features. Only those portions of the input features falling outside the erase features outside boundaries are copied to the output feature class."
-msgstr "イレース フィーチャのポリゴンを入力フィーチャに重ねることによって、新しいフィーチャクラスを作成します。入力フィーチャにイレース フィーチャを重ね合わせ、イレース フィーチャ以外の部分だけが出力フィーチャクラスにコピーされます."
+msgstr "イレース フィーチャのポリゴンを入力フィーチャに重ねることによって、新しいフィーチャクラスを作成します.入力フィーチャにイレース フィーチャを重ね合わせ、イレース フィーチャ以外の部分だけが出力フィーチャクラスにコピーされます."
 
+msgid "Erase Features"
+msgstr "イレース フィーチャ"
 
+msgid "Fill Doughnut"
+msgstr "ドーナッツポリゴンの穴埋め"
 
+msgid "Create a polygon that fills the hole of the donut polygon."
+msgstr "ドーナッツポリゴンの穴を埋めます."
 
+msgid "Polyline To CrossPoint"
+msgstr "ポリライン同士の交差→点"
+
+msgid "Creates a Point feature class from specified Polyline features.All cross Features are used and clear Selection."
+msgstr "ポリライン同士の交差点にポイントフィーチャを作成します.処理によって交差フィーチャは選択が解除されます."
+
+msgid "Input Cross Features"
+msgstr "入力交差線フィーチャ"
 
 msgid "Geometry Type"
 msgstr "図形種別"
@@ -125,3 +139,59 @@ msgstr "集合(グループ)フィールド"
 msgid "SortField"
 msgstr "順列(ソート)フィールド"
 
+msgid "Creates a esri JSON."
+msgstr "esri Feature形式のJSONを作成します。"
+
+msgid "In Records"
+msgstr "入力レコード"
+
+msgid "Output JSON"
+msgstr "出力JSON"
+
+msgid "Add Area Field"
+msgstr "面積フィールドの追加"
+
+msgid "Adds a Area field to a Polygon feature layer."
+msgstr "ポリゴンフィーチャレイヤに面積フィールドを追加します."
+
+msgid "Area Calc Type"
+msgstr "面積計算種別"
+
+msgid "Area Unit"
+msgstr "面積単位"
+
+msgid "Add Extent Field"
+msgstr "範囲フィールドの追加(最小/大XY)"
+
+msgid "Adds a Extent field to a feature layer."
+msgstr "フィーチャレイヤに最小/最大 XY座標フィールドを追加します."
+
+msgid "Add Length Field"
+msgstr "長さフィールドの追加"
+
+msgid "Adds a Length field to a Polyline/Polygon feature layer."
+msgstr "ポリライン/ポリゴンレイヤに長さフィールドを追加します."
+
+msgid "Length Calc Type"
+msgstr "長さ計算種別"
+
+msgid "Length Unit"
+msgstr "長さ単位"
+
+msgid "Add Point Count Field"
+msgstr "頂点数フィールドの追加"
+
+msgid "Adds a Point Count field to a feature layer"
+msgstr "レイヤに頂点数フィールドを追加します."
+
+msgid "Add XY Field"
+msgstr "XY座標フィールドの追加"
+
+msgid "Adds a XY field to a feature layer"
+msgstr "レイヤにXY座標フィールドを追加します."
+
+msgid "The value of the [Area] field will be overwritten."
+msgstr "[Area]フィールドの値が上書きされます."
+
+msgid "Table/Layer to JSON"
+msgstr "テーブル/レイヤ→JSON"

@@ -6,7 +6,7 @@ import os
 class AddLengthField(object):
   def __init__(self):
     self.label = _("Add Length Field")
-    self.description = _("Adds a Area field to a Polygon feature layer.")
+    self.description = _("Adds a Length field to a Polyline/Polygon feature layer.")
 
     self.category = _("Fields")
     self.canRunInBackground = False

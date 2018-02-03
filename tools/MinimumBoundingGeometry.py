@@ -13,7 +13,7 @@ class MinimumBoundingGeometry(object):
 
   def getParameterInfo(self):
     param0 = arcpy.Parameter(
-               displayName="Input Features",
+               displayName=_("Input Features"),
                name="in_layer",
                datatype="GPFeatureLayer",
                parameterType="Required",
