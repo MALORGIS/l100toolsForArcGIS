@@ -1,0 +1,127 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2018-01-28 17:00+0900\n"
+"PO-Revision-Date: 2018-02-3 17:20+0900\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja\n"
+"X-Generator: Poedit 2.0.6\n"
+
+
+msgid "TransformationShapes"
+msgstr "形状変更"
+
+msgid "Fields"
+msgstr "フィールド(属性)"
+
+
+msgid "Feature Vertices To Points"
+msgstr "フィーチャの頂点→ポイント"
+
+msgid "Creates a feature class containing points generated from specified vertices or locations of the input features."
+msgstr "入力フィーチャの指定頂点からポイントフィーチャクラスを作成します."
+
+msgid "Minimum Bounding Geometry"
+msgstr "図形の最小範囲→ポリゴン"
+
+msgid "Creates a feature class containing polygons which represent a specified minimum bounding geometry enclosing each input features."
+msgstr "各入力フィーチャを囲む最小境界図形(ポリゴン)フィーチャクラスを作成します."
+
+msgid "Point To Polygon"
+msgstr "ポイント→ポリゴン"
+
+msgid "Creates a polygon feature class from specified point features."
+msgstr "指定したポイントフィーチャからポリゴンフィーチャクラスを作成します."
+
+msgid "Point To Polyline"
+msgstr "ポイント→ポリライン"
+
+msgid "Creates a Polyline feature class from specified point features."
+msgstr "指定したポイントフィーチャからポリラインフィーチャクラスを作成します。"
+
+msgid "Polygon To Point"
+msgstr "ポリゴン→ポイント"
+
+msgid "Creates a Point feature class from specified Polygon features."
+msgstr "指定されたポリゴンフィーチャからポイントフィーチャクラスを作成します."
+
+msgid "Polygon To Polyline"
+msgstr "ポリゴン→ポリライン"
+
+msgid "Creates a Polyline feature class from specified Polygon features."
+msgstr "指定されたポリゴンフィーチャからポリラインフィーチャクラスを作成します."
+
+msgid "Polyline To Polygon"
+msgstr "ポリライン→ポリゴン"
+
+msgid "Creates a Polygon feature class from specified Polyline features."
+msgstr "指定されたポリラインフィーチャからポリゴンフィーチャクラスを作成します."
+
+msgid "Random Points"
+msgstr "ランダム ポイント"
+
+msgid "Creates a specified number of random point features. Random points can be generated in a inside polygon features."
+msgstr "指定された数のランダムポイントフィーチャを作成します。指定したポリゴンフィーチャ内にランダムな点を生成します."
+
+
+msgid "Spider Diagrams"
+msgstr "スパイダーダイアグラム"
+
+msgid "Creates a SpiderDiagrams Polyline feature class from specified point features."
+msgstr "開始点フィーチャクラスから終了点フィーチャクラスまで直線を引きスパイダーダイアグラムを作成します."
+
+msgid "Erase"
+msgstr "イレース"
+
+msgid "Creates a feature class by overlaying the Input Features with the polygons of the Erase Features. Only those portions of the input features falling outside the erase features outside boundaries are copied to the output feature class."
+msgstr "イレース フィーチャのポリゴンを入力フィーチャに重ねることによって、新しいフィーチャクラスを作成します。入力フィーチャにイレース フィーチャを重ね合わせ、イレース フィーチャ以外の部分だけが出力フィーチャクラスにコピーされます."
+
+
+
+
+
+msgid "Geometry Type"
+msgstr "図形種別"
+
+msgid "Point Count Field"
+msgstr "ポイント件数フィールド"
+
+msgid "Point Count [If not field]"
+msgstr "指定点数 (フィールドを指定しない,値がない場合)"
+
+msgid "To Features"
+msgstr "終了点フィーチャクラス"
+
+msgid "From Features"
+msgstr "開始点フィーチャクラス"
+
+msgid "IDField"
+msgstr "一意フィールド"
+
+msgid "LinkField"
+msgstr "リンクフィールド"
+
+msgid "Input Features"
+msgstr "入力フィーチャ"
+
+msgid "Output Features"
+msgstr "出力フィーチャ"
+
+msgid "Point Location"
+msgstr "頂点位置"
+
+msgid "GroupField"
+msgstr "集合(グループ)フィールド"
+
+msgid "SortField"
+msgstr "順列(ソート)フィールド"
+

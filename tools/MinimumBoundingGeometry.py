@@ -5,10 +5,10 @@ import os
 
 class MinimumBoundingGeometry(object):
   def __init__(self):
-    self.label = "Minimum Bounding Geometry"
-    self.description = "CreateCreates a feature class containing polygons which represent a specified minimum bounding geometry enclosing each input feature or each group of input features."
+    self.label = _("Minimum Bounding Geometry")
+    self.description = _("Creates a feature class containing polygons which represent a specified minimum bounding geometry enclosing each input features.")
 
-    self.category = "TransformationShapes"
+    self.category = _("TransformationShapes")
     self.canRunInBackground = False
 
   def getParameterInfo(self):
@@ -22,7 +22,7 @@ class MinimumBoundingGeometry(object):
     param0.filter.list = ["Multipoint","Polyline","Polygon"]
 
     param1 = arcpy.Parameter(
-        displayName="Output Features",
+        displayName=_("Output Features"),
         name="out_features",
         datatype="DEFeatureClass",
         parameterType="Required",
@@ -30,7 +30,7 @@ class MinimumBoundingGeometry(object):
         direction="Output")
 
     param2 = arcpy.Parameter(
-        displayName="Geometry Type",
+        displayName=_("Geometry Type"),
         name="geometry_type",
         datatype="GPString",
         parameterType="Optional",
@@ -67,12 +67,14 @@ class MinimumBoundingGeometry(object):
     if (not geometryType):
       geometryType = "ENVELOPE"
 
+    # arcinfo user use [MinimumBoundingGeometry_management]
     if (arcpy.ProductInfo() != "ArcInfo" or geometryType != "CONVEX_HULL"):
       arcpy.MinimumBoundingGeometry_management(inFeatures,
                                              outFeatures,
                                              geometryType)
       return
 
+    # only CONVEX_HULL
     inDesc = arcpy.Describe(inFeatures)
     if (inDesc.dataType == "FeatureLayer"):
       inDesc = inDesc.featureClass

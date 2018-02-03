@@ -8,15 +8,15 @@ class FeatureVerticesToPoints(object):
 
   def __init__(self):
 
-    self.label = "Feature Vertices To Points"
-    self.description = "Creates a feature class containing points generated from specified vertices or locations of the input features."
+    self.label = _("Feature Vertices To Points")
+    self.description = _("Creates a feature class containing points generated from specified vertices or locations of the input features.")
 
-    self.category = "TransformationShapes"
+    self.category = _("TransformationShapes")
     self.canRunInBackground = False
 
   def getParameterInfo(self):
     param0 = arcpy.Parameter(
-               displayName="Input Features",
+               displayName=_("Input Features"),
                name="in_layer",
                datatype="GPFeatureLayer",
                parameterType="Required",
@@ -25,7 +25,7 @@ class FeatureVerticesToPoints(object):
     param0.filter.list = ["Polyline", "Polygon"]
     
     param1 = arcpy.Parameter(
-        displayName="Output Features",
+        displayName=_("Output Features"),
         name="out_features",
         datatype="DEFeatureClass",
         parameterType="Required",
@@ -36,8 +36,8 @@ class FeatureVerticesToPoints(object):
     #param1.schema.clone = True
 
     param2 = arcpy.Parameter(
-        displayName="Input value",
-        name="in_value",
+        displayName=_("Point Location"),
+        name="point_location",
         datatype="GPString",
         parameterType="Required",
         direction="Input")

@@ -1,22 +1,21 @@
 # -*- coding: UTF-8 -*-
 
 import arcpy
-
 import os
 
 class PointToPolygon(object):
 
   def __init__(self):
-    self.label = "Point To Polygon"
-    self.description = "Creates a polygon feature class from specified point features."
+    self.label = _("Point To Polygon")
+    self.description = _("Creates a polygon feature class from specified point features.")
 
-    self.category = "TransformationShapes"
+    self.category = _("TransformationShapes")
     self.canRunInBackground = False
 
   def getParameterInfo(self):
 
     param0 = arcpy.Parameter(
-               displayName="Input Features",
+               displayName=_("Input Features"),
                name="in_layer",
                datatype="GPFeatureLayer",
                parameterType="Required",
@@ -25,7 +24,7 @@ class PointToPolygon(object):
     param0.filter.list = ["Point"]#, "Multipoint"]
 
     param1 = arcpy.Parameter(
-        displayName="GroupField",
+        displayName=_("GroupField"),
         name="groupfield",
         datatype="Field",
         parameterType="Optional",
@@ -35,7 +34,7 @@ class PointToPolygon(object):
     param1.parameterDependencies = [param0.name]
 
     param2 = arcpy.Parameter(
-        displayName="SortField",
+        displayName=_("SortField"),
         name="sortfield",
         datatype="Field",
         parameterType="Optional",
@@ -45,7 +44,7 @@ class PointToPolygon(object):
     param2.parameterDependencies = [param0.name]
 
     param3 = arcpy.Parameter(
-        displayName="Output Features",
+        displayName=_("Output Features"),
         name="out_features",
         datatype="DEFeatureClass",
         parameterType="Required",

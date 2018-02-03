@@ -8,16 +8,16 @@ import numpy as np
 class RandomPoints(object):
     
   def __init__(self):
-    self.label = "Random Points"
-    self.description = "Creates a specified number of random point features. Random points can be generated in a inside polygon features."
+    self.label = _("Random Points")
+    self.description = _("Creates a specified number of random point features. Random points can be generated in a inside polygon features.")
 
-    self.category = "TransformationShapes"
+    self.category = _("TransformationShapes")
     self.canRunInBackground = False
 
   def getParameterInfo(self):
 
     param0 = arcpy.Parameter(
-        displayName="Input Features",
+        displayName=_("Input Features"),
         name="in_layer",
         datatype="GPFeatureLayer",
         parameterType="Required",
@@ -25,7 +25,7 @@ class RandomPoints(object):
     param0.filter.list = ["Polygon"]
 
     param1 = arcpy.Parameter(
-        displayName="Point Count Field",
+        displayName=_("Point Count Field"),
         name="in_rndPointNumCol",
         datatype="Field",
         parameterType="Optional",
@@ -36,7 +36,7 @@ class RandomPoints(object):
 
         
     param2 = arcpy.Parameter(
-        displayName="Point Count [If not field]",
+        displayName=_("Point Count [If not field]"),
         name="in_rndPointNum",
         datatype="GPLong",
         parameterType="Required",
@@ -44,7 +44,7 @@ class RandomPoints(object):
     param2.value = 100
 
     param3 = arcpy.Parameter(
-        displayName="Output Features",
+        displayName=_("Output Features"),
         name="out_features",
         datatype="DEFeatureClass",
         parameterType="Required",

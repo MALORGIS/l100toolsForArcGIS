@@ -1,22 +1,20 @@
 # -*- coding: UTF-8 -*-
 
 import arcpy
-
 import os
-
 
 class PolygonToPoint(object):
 
   def __init__(self):
-    self.label = "Polygon To Point"
-    self.description = "Creates a Point feature class from specified Polygon features."
+    self.label = _("Polygon To Point")
+    self.description = _("Creates a Point feature class from specified Polygon features.")
 
-    self.category = "TransformationShapes"
+    self.category = _("TransformationShapes")
     self.canRunInBackground = False
 
   def getParameterInfo(self):
     param0 = arcpy.Parameter(
-               displayName="Input Features",
+               displayName=_("Input Features"),
                name="in_layer",
                datatype="GPFeatureLayer",
                parameterType="Required",
@@ -25,7 +23,7 @@ class PolygonToPoint(object):
     param0.filter.list = ["Polygon"]
 
     param1 = arcpy.Parameter(
-        displayName="Output Features",
+        displayName=_("Output Features"),
         name="out_features",
         datatype="DEFeatureClass",
         parameterType="Required",
@@ -34,8 +32,8 @@ class PolygonToPoint(object):
 
 
     param2 = arcpy.Parameter(
-        displayName="Input value",
-        name="in_value",
+        displayName=_("Point Location"),
+        name="point_location",
         datatype="GPString",
         parameterType="Required",
         direction="Input")
