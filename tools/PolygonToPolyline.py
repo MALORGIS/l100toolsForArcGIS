@@ -1,22 +1,20 @@
 # -*- coding: UTF-8 -*-
 
 import arcpy
-
 import os
-
 
 class PolygonToPolyline(object):
 
   def __init__(self):
-    self.label = "Polygon To Polyline"
-    self.description = "Creates a Polyline feature class from specified Polygon features."
+    self.label = _("Polygon To Polyline")
+    self.description = _("Creates a Polyline feature class from specified Polygon features.")
 
-    self.category = "TransformationShapes"
+    self.category = _("TransformationShapes")
     self.canRunInBackground = False
 
   def getParameterInfo(self):
     param0 = arcpy.Parameter(
-               displayName="Input Features",
+               displayName=_("Input Features"),
                name="in_layer",
                datatype="GPFeatureLayer",
                parameterType="Required",
@@ -25,7 +23,7 @@ class PolygonToPolyline(object):
     param0.filter.list = ["Polygon"]
 
     param1 = arcpy.Parameter(
-        displayName="Output Features",
+        displayName=_("Output Features"),
         name="out_features",
         datatype="DEFeatureClass",
         parameterType="Required",

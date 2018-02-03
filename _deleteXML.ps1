@@ -1,0 +1,1 @@
+Get-ChildItem *.xml | del #-WhatIf

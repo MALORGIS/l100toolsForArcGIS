@@ -1,22 +1,22 @@
 # -*- coding: UTF-8 -*-
 
 import arcpy
-
 import os
+
 
 class PointToPolyline(object):
 
   def __init__(self):
-    self.label = "Point To Polyline"
-    self.description = "Creates a Polyline feature class from specified point features."
+    self.label = _("Point To Polyline")
+    self.description = _("Creates a Polyline feature class from specified point features.")
 
-    self.category = "TransformationShapes"
+    self.category = _("TransformationShapes")
     self.canRunInBackground = False
 
   def getParameterInfo(self):
 
     param0 = arcpy.Parameter(
-               displayName="Input Features",
+               displayName=_("Input Features"),
                name="in_layer",
                datatype="GPFeatureLayer",
                parameterType="Required",
@@ -25,7 +25,7 @@ class PointToPolyline(object):
     param0.filter.list = ["Point"]#, "Multipoint"]
 
     param1 = arcpy.Parameter(
-        displayName="GroupField",
+        displayName=_("GroupField"),
         name="groupfield",
         datatype="Field",
         parameterType="Optional",
@@ -35,7 +35,7 @@ class PointToPolyline(object):
     param1.parameterDependencies = [param0.name]
 
     param2 = arcpy.Parameter(
-        displayName="SortField",
+        displayName=_("SortField"),
         name="sortfield",
         datatype="Field",
         parameterType="Optional",
@@ -45,7 +45,7 @@ class PointToPolyline(object):
     param2.parameterDependencies = [param0.name]
 
     param3 = arcpy.Parameter(
-        displayName="Output Features",
+        displayName=_("Output Features"),
         name="out_features",
         datatype="DEFeatureClass",
         parameterType="Required",

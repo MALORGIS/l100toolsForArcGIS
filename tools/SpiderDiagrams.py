@@ -1,22 +1,21 @@
 # -*- coding: UTF-8 -*-
 
 import arcpy
-
 import os
 
 class SpiderDiagrams(object):
 
   def __init__(self):
-    self.label = "Spider Diagrams"
-    self.description = "Creates a SpiderDiagrams Polyline feature class from specified point features."
+    self.label = _("Spider Diagrams")
+    self.description = _("Creates a SpiderDiagrams Polyline feature class from specified point features.")
 
-    self.category = "TransformationShapes"
+    self.category = _("TransformationShapes")
     self.canRunInBackground = False
 
   def getParameterInfo(self):
 
     param0 = arcpy.Parameter(
-               displayName="To Features",
+               displayName=_("To Features"),
                name="in_layer",
                datatype="GPFeatureLayer",
                parameterType="Required",
@@ -25,7 +24,7 @@ class SpiderDiagrams(object):
     param0.filter.list = ["Point"]#, "Multipoint"]
 
     param1 = arcpy.Parameter(
-        displayName="IDField",
+        displayName=_("IDField"),
         name="idfield",
         datatype="Field",
         parameterType="Required",
@@ -35,7 +34,7 @@ class SpiderDiagrams(object):
     param1.parameterDependencies = [param0.name]
 
     param2 = arcpy.Parameter(
-               displayName="From Features",
+               displayName=_("From Features"),
                name="from_layer",
                datatype="GPFeatureLayer",
                parameterType="Required",
@@ -44,7 +43,7 @@ class SpiderDiagrams(object):
     param2.filter.list = ["Point"]
 
     param3 = arcpy.Parameter(
-        displayName="LinkField",
+        displayName=_("LinkField"),
         name="linkfield",
         datatype="Field",
         parameterType="Optional",
@@ -54,7 +53,7 @@ class SpiderDiagrams(object):
     param3.parameterDependencies = [param2.name]
 
     param4 = arcpy.Parameter(
-        displayName="Output Features",
+        displayName=_("Output Features"),
         name="out_features",
         datatype="DEFeatureClass",
         parameterType="Required",

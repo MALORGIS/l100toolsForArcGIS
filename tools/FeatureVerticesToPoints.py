@@ -3,25 +3,6 @@
 import arcpy
 import os
 
-
-import locale
-#set locale
-loctext = locale.setlocale(locale.LC_ALL, "")
-
-import gettext
-
-domain = 'l100tools'
-localedir = os.path.join(os.path.dirname(
-              os.path.dirname(__file__)), 'locale')
-
-if (loctext.lower().find('japan') > -1):
-  t = gettext.translation(domain, localedir, ['ja'], fallback=True)
-  t.install()
-else:
-  gettext.NullTranslations().install()
-
-
-
 #フィーチャの頂点 → ポイント
 class FeatureVerticesToPoints(object):
 
@@ -30,12 +11,12 @@ class FeatureVerticesToPoints(object):
     self.label = _("Feature Vertices To Points")
     self.description = _("Creates a feature class containing points generated from specified vertices or locations of the input features.")
 
-    self.category = "TransformationShapes"
+    self.category = _("TransformationShapes")
     self.canRunInBackground = False
 
   def getParameterInfo(self):
     param0 = arcpy.Parameter(
-               displayName="Input Features",
+               displayName=_("Input Features"),
                name="in_layer",
                datatype="GPFeatureLayer",
                parameterType="Required",
@@ -44,7 +25,7 @@ class FeatureVerticesToPoints(object):
     param0.filter.list = ["Polyline", "Polygon"]
     
     param1 = arcpy.Parameter(
-        displayName="Output Features",
+        displayName=_("Output Features"),
         name="out_features",
         datatype="DEFeatureClass",
         parameterType="Required",
@@ -55,8 +36,8 @@ class FeatureVerticesToPoints(object):
     #param1.schema.clone = True
 
     param2 = arcpy.Parameter(
-        displayName="Input value",
-        name="in_value",
+        displayName=_("Point Location"),
+        name="point_location",
         datatype="GPString",
         parameterType="Required",
         direction="Input")
