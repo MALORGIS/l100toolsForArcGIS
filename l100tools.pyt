@@ -21,6 +21,7 @@ from PolygonToPolyline import PolygonToPolyline
 from PolylineToCrossPoint import PolylineToCrossPoint
 from PolylineToPolygon import PolylineToPolygon
 from RandomPoints import RandomPoints
+from RasterCellValueToPoint import RasterCellValueToPoint
 from SpiderDiagrams import SpiderDiagrams
 from TableLayerToJSON import TableLayerToJSON
 
@@ -32,4 +33,4 @@ class Toolbox(object):
     self.alias = "100 Line Tools"
 
     #TO:ツール増加時は配列に加える。
-    self.tools = [ AddAreaField,AddExtentField,AddLengthField,AddPointCountField,AddXYField,Erase,FeatureVerticesToPoints,FillDoughnut,MinimumBoundingGeometry,PointToPolygon,PointToPolyline,PolygonToPoint,PolygonToPolyline,PolylineToCrossPoint,PolylineToPolygon,RandomPoints,SpiderDiagrams,TableLayerToJSON ]
+    self.tools = [ AddAreaField,AddExtentField,AddLengthField,AddPointCountField,AddXYField,Erase,FeatureVerticesToPoints,FillDoughnut,MinimumBoundingGeometry,PointToPolygon,PointToPolyline,PolygonToPoint,PolygonToPolyline,PolylineToCrossPoint,PolylineToPolygon,RandomPoints,RasterCellValueToPoint,SpiderDiagrams,TableLayerToJSON ]

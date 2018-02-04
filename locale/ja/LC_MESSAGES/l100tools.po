@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2018-01-28 17:00+0900\n"
-"PO-Revision-Date: 2018-02-03 19:37+0900\n"
+"PO-Revision-Date: 2018-02-04 18:12+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -195,3 +195,15 @@ msgstr "[Area]フィールドの値が上書きされます."
 
 msgid "Table/Layer to JSON"
 msgstr "テーブル/レイヤ→JSON"
+
+msgid "Raster Cell Value to Point Attribute"
+msgstr "ラスタセル値→ポイント属性"
+
+msgid "Set Point Attributes from Raster Pixcel value."
+msgstr "ポイント属性にラスタのピクセル値を入力します."
+
+msgid "Input Raster"
+msgstr "入力ラスタ"
+
+msgid "The value of the [band n] field will be overwritten."
+msgstr "[band n]フィールドの値が上書きされます."
