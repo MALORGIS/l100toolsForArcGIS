@@ -2,6 +2,7 @@
 import arcpy
 import os
 
+#ツール定義
 class AddPointCountField(object):
   def __init__(self):
     self.label = _("Add Point Count Field")

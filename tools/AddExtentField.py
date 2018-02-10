@@ -2,6 +2,7 @@
 import arcpy
 import os
 
+#ツール定義
 class AddExtentField(object):
   def __init__(self):
     self.label = _("Add Extent Field")

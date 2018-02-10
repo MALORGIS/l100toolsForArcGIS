@@ -32,8 +32,8 @@ from TableLayerToJSON import TableLayerToJSON
 class Toolbox(object):
   #コンストラクタ : ツールボックスの名称ツールの設定
   def __init__(self):
-    self.label = "l100tools"
-    self.alias = "100 Line Tools"
+    self.label = "100 Line Tools"
+    self.alias = "l100tools"
 
     #TO:ツール増加時は配列に加える。
     self.tools = [ AddAreaField,AddExtentField,AddGeometryHashField,AddLengthField,AddPointCountField,AddXYField,Erase,FeatureVerticesToPoints,FillDoughnut,MinimumBoundingGeometry,PointToPolygon,PointToPolyline,PolygonToPoint,PolygonToPolyline,PolylineToCrossPoint,PolylineToPolygon,RandomPoints,RasterCellValueToPoint,SpatiliteDelaunayTriangulation,SpatiliteVoronojDiagram,SpiderDiagrams,TableLayerToJSON ]

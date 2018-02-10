@@ -25,8 +25,8 @@ import _SetupGetText
 class Toolbox(object):
   #コンストラクタ : ツールボックスの名称ツールの設定
   def __init__(self):
-    self.label = "l100tools"
-    self.alias = "100 Line Tools"
+    self.label = "100 Line Tools"
+    self.alias = "l100tools"
 
     #TO:ツール増加時は配列に加える。
     self.tools = [ {1} ]

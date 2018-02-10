@@ -3,6 +3,7 @@
 import arcpy
 import os
 
+#ツール定義
 class PolygonToPoint(object):
 
   def __init__(self):

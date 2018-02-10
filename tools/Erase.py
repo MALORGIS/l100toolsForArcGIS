@@ -2,6 +2,7 @@
 import arcpy
 import os
 
+#ツール定義
 class Erase(object):
   def __init__(self):
     self.label = _("Erase")

@@ -5,6 +5,7 @@ import os
 
 import numpy as np
 
+#ツール定義
 class RandomPoints(object):
     
   def __init__(self):

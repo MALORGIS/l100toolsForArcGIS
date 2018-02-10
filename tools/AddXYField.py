@@ -2,6 +2,7 @@
 import arcpy
 import os
 
+#ツール定義
 class AddXYField(object):
   def __init__(self):
     self.label = _("Add XY Field")

@@ -4,6 +4,7 @@ import arcpy
 
 import os
 
+#ツール定義
 class PolylineToCrossPoint(object):
 
   def __init__(self):

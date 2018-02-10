@@ -3,6 +3,7 @@
 import arcpy
 import os
 
+#ツール定義
 class MinimumBoundingGeometry(object):
   def __init__(self):
     self.label = _("Minimum Bounding Geometry")

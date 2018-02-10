@@ -3,6 +3,7 @@ import arcpy
 import os
 import hashlib
 
+#ツール定義
 class AddGeometryHashField(object):
   def __init__(self):
     self.label = _("Add Geometry Hash Field")

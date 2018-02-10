@@ -1,4 +1,6 @@
-﻿# -*- coding: UTF-8 -*-
+# -*- coding: UTF-8 -*-
+
+#ロケールの確認と_の適用
 
 import os
 import locale

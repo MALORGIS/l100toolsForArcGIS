@@ -11,6 +11,7 @@ from contextlib import closing
 
 from _tempSqlite import _tempSqlite
 
+#ツール定義
 class SpatiliteDelaunayTriangulation(object):
 
   def __init__(self):

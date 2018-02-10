@@ -3,6 +3,7 @@
 import arcpy
 import os
 
+#ツール定義
 class AddAreaField(object):
   def __init__(self):
     self.label = _("Add Area Field")

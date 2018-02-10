@@ -3,7 +3,7 @@
 import arcpy
 import os
 
-
+#ツール定義
 class PolylineToPolygon(object):
 
   def __init__(self):

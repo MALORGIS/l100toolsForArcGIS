@@ -2,6 +2,7 @@
 
 import arcpy
 
+#ツール定義
 class RasterCellValueToPoint(object):
   def __init__(self):
     self.label = _("Raster Cell Value to Point Attribute")
