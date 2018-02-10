@@ -12,3 +12,11 @@ You can use even without installing it.
 test? refactoring?  
 Of course if I feel like it.  ｍaybe  
   
+#### SpatilLite tools
+You can use SpatilLite tools if you download it and place it in tools dir.  
+See _download_mod_spatilite.ps1.(You can also download and put it manually)  
+  
+SpatilLite is a great tool.
+This tool just call it from ArcGIS.  
+Call it directly if you can use it.  
+
