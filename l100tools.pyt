@@ -7,6 +7,7 @@ import _SetupGetText
 
 from AddAreaField import AddAreaField
 from AddExtentField import AddExtentField
+from AddGeometryHashField import AddGeometryHashField
 from AddLengthField import AddLengthField
 from AddPointCountField import AddPointCountField
 from AddXYField import AddXYField
@@ -22,6 +23,8 @@ from PolylineToCrossPoint import PolylineToCrossPoint
 from PolylineToPolygon import PolylineToPolygon
 from RandomPoints import RandomPoints
 from RasterCellValueToPoint import RasterCellValueToPoint
+from SpatiliteDelaunayTriangulation import SpatiliteDelaunayTriangulation
+from SpatiliteVoronojDiagram import SpatiliteVoronojDiagram
 from SpiderDiagrams import SpiderDiagrams
 from TableLayerToJSON import TableLayerToJSON
 
@@ -33,4 +36,4 @@ class Toolbox(object):
     self.alias = "100 Line Tools"
 
     #TO:ツール増加時は配列に加える。
-    self.tools = [ AddAreaField,AddExtentField,AddLengthField,AddPointCountField,AddXYField,Erase,FeatureVerticesToPoints,FillDoughnut,MinimumBoundingGeometry,PointToPolygon,PointToPolyline,PolygonToPoint,PolygonToPolyline,PolylineToCrossPoint,PolylineToPolygon,RandomPoints,RasterCellValueToPoint,SpiderDiagrams,TableLayerToJSON ]
+    self.tools = [ AddAreaField,AddExtentField,AddGeometryHashField,AddLengthField,AddPointCountField,AddXYField,Erase,FeatureVerticesToPoints,FillDoughnut,MinimumBoundingGeometry,PointToPolygon,PointToPolyline,PolygonToPoint,PolygonToPolyline,PolylineToCrossPoint,PolylineToPolygon,RandomPoints,RasterCellValueToPoint,SpatiliteDelaunayTriangulation,SpatiliteVoronojDiagram,SpiderDiagrams,TableLayerToJSON ]
