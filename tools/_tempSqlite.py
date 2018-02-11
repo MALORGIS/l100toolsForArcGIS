@@ -15,7 +15,8 @@ class _tempSqlite(object):
     self.temp_dir = None
     self.sqliteFile = None
     self.sqlFile = None
-
+    self.exception = None
+    
     if (not sqliteExe):
       dirNaem = os.path.dirname(os.path.abspath(__file__))
       sqliteExe = os.path.join(dirNaem, 'mod_spatialite-4.3.0a-win-amd64/sqlite3.exe')
@@ -35,10 +36,15 @@ class _tempSqlite(object):
 
   def __exit__(self, exc_type, exc_value, traceback):
 
-    arcpy.Delete_management(self.sqliteFile)
-    # 一時ディレクトリを削除
-    shutil.rmtree(self.temp_dir)
-    print("exit")
+    try:
+      arcpy.Delete_management(self.sqliteFile)
+      # 一時ディレクトリを削除
+      shutil.rmtree(self.temp_dir)
+      print("exit")
+    
+    except Exception as e:
+      self.exception = e
+    
 
   def excuteSql(self):
     cmdLine = '"' + self.sqliteExe + '" "' + self.sqliteFile + '" < "' + self.sqlFile + '"'
