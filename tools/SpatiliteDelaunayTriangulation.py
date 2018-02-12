@@ -118,7 +118,7 @@ CREATE TABLE Triangular (
   P2 INTEGER,
   P3 INTEGER
 );
-SELECT AddGeometryColumn('Triangular', 'geom', 4612,'POLYGON', 'XY');
+SELECT AddGeometryColumn('Triangular', 'geom', """ + str(srid) + """,'POLYGON', 'XY');
 
 INSERT INTO Triangular 
 SELECT
