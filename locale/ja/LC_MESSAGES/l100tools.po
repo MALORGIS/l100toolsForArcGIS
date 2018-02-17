@@ -1,4 +1,4 @@
-# Copyright (C) YEAR ORGANIZATION
+﻿# Copyright (C) YEAR ORGANIZATION
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
@@ -227,3 +227,9 @@ msgstr "ポイント→ボロノイ図"
 
 msgid "Creates a Voronoi polygon feature class from specified point features."
 msgstr "指定したポイントフィーチャからボロノイポリゴンを作成します."
+
+msgid "Near Line(self/target)"
+msgstr "最近接(自フィーチャ内/対象フィーチャ)"
+
+msgid "Creates a polyline feature class from specified feature layer."
+msgstr "指定したフィーチャレイヤから最近接ラインを作成します."
