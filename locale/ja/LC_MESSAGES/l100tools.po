@@ -1,11 +1,10 @@
-﻿# Copyright (C) YEAR ORGANIZATION
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2018-01-28 17:00+0900\n"
-"PO-Revision-Date: 2018-02-10 19:15+0900\n"
+"PO-Revision-Date: 2018-02-18 16:03+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -233,3 +232,15 @@ msgstr "最近接(自フィーチャ内/対象フィーチャ)"
 
 msgid "Creates a polyline feature class from specified feature layer."
 msgstr "指定したフィーチャレイヤから最近接ラインを作成します."
+
+msgid "Extract Feature Attachments"
+msgstr "フィーチャアタッチメント(添付ファイル)の展開"
+
+msgid "Extract all attached files to the specified folder."
+msgstr "指定したフォルダに全ての添付ファイルを展開します."
+
+msgid "Output Folder"
+msgstr "出力フォルダ"
+
+msgid "The input table is not an attachments table."
+msgstr "入力テーブルはフィーチャアタッチメント(添付ファイル)テーブルではありません."
