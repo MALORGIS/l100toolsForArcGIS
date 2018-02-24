@@ -1,4 +1,4 @@
-# -*- coding: UTF-8 -*-
+﻿# -*- coding: UTF-8 -*-
 
 import arcpy
 
@@ -7,6 +7,7 @@ import codecs
 import datetime
 #import pytz
 
+#ツール定義
 class TableToRectangle(object):
 
   def __init__(self):
