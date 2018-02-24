@@ -1,4 +1,4 @@
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+﻿# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
@@ -244,3 +244,13 @@ msgstr "出力フォルダ"
 
 msgid "The input table is not an attachments table."
 msgstr "入力テーブルはフィーチャアタッチメント(添付ファイル)テーブルではありません."
+
+msgid "Table To Rectangle"
+msgstr "四隅座標から矩形ポリゴン"
+
+msgid "Creates a rectangular polygon from four corner coordinates."
+msgstr "四隅座標から矩形ポリゴンを作成します."
+
+msgid SpatialReference"
+msgstr "空間参照"
+
