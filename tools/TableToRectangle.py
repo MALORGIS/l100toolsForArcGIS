@@ -1,4 +1,4 @@
-﻿# -*- coding: UTF-8 -*-
+# -*- coding: UTF-8 -*-
 
 import arcpy
 
@@ -37,7 +37,7 @@ class TableToRectangle(object):
         displayName=_("MinX"),
         name="MinX",
         datatype="Field",
-        parameterType="Optional",
+        parameterType="Required",
         direction="Input")
     param2.filter.list = ['Short', 'Long', 'Double', 'Single']
     param2.parameterDependencies = [param0.name]
@@ -46,7 +46,7 @@ class TableToRectangle(object):
         displayName=_("MinY"),
         name="MinY",
         datatype="Field",
-        parameterType="Optional",
+        parameterType="Required",
         direction="Input")
     param3.filter.list = ['Short', 'Long', 'Double', 'Single']
     param3.parameterDependencies = [param0.name]
@@ -55,7 +55,7 @@ class TableToRectangle(object):
         displayName=_("MaxX"),
         name="MaxX",
         datatype="Field",
-        parameterType="Optional",
+        parameterType="Required",
         direction="Input")
     param4.filter.list = ['Short', 'Long', 'Double', 'Single']
     param4.parameterDependencies = [param0.name]
@@ -64,7 +64,7 @@ class TableToRectangle(object):
         displayName=_("MaxY"),
         name="MaxY",
         datatype="Field",
-        parameterType="Optional",
+        parameterType="Required",
         direction="Input")
     param5.filter.list = ['Short', 'Long', 'Double', 'Single']
     param5.parameterDependencies = [param0.name]
