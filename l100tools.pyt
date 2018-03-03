@@ -25,6 +25,7 @@ from PolylineToPolygon import PolylineToPolygon
 from RandomPoints import RandomPoints
 from RasterCellValueToPoint import RasterCellValueToPoint
 from SpatiliteDelaunayTriangulation import SpatiliteDelaunayTriangulation
+from SpatiliteHexagonalGrid import SpatiliteHexagonalGrid
 from SpatiliteNear import SpatiliteNear
 from SpatiliteVoronojDiagram import SpatiliteVoronojDiagram
 from SpiderDiagrams import SpiderDiagrams
@@ -40,4 +41,4 @@ class Toolbox(object):
     self.alias = "l100tools"
 
     #TO:ツール増加時は配列に加える。
-    self.tools = [ AddAreaField,AddExtentField,AddGeometryHashField,AddLengthField,AddPointCountField,AddXYField,Erase,ExtractFeatureAttachments,FeatureVerticesToPoints,FillDoughnut,MinimumBoundingGeometry,PointToPolygon,PointToPolyline,PolygonToPoint,PolygonToPolyline,PolylineToCrossPoint,PolylineToPolygon,RandomPoints,RasterCellValueToPoint,SpatiliteDelaunayTriangulation,SpatiliteNear,SpatiliteVoronojDiagram,SpiderDiagrams,TableLayerToJSON,TableToCircle,TableToRectangle ]
+    self.tools = [ AddAreaField,AddExtentField,AddGeometryHashField,AddLengthField,AddPointCountField,AddXYField,Erase,ExtractFeatureAttachments,FeatureVerticesToPoints,FillDoughnut,MinimumBoundingGeometry,PointToPolygon,PointToPolyline,PolygonToPoint,PolygonToPolyline,PolylineToCrossPoint,PolylineToPolygon,RandomPoints,RasterCellValueToPoint,SpatiliteDelaunayTriangulation,SpatiliteHexagonalGrid,SpatiliteNear,SpatiliteVoronojDiagram,SpiderDiagrams,TableLayerToJSON,TableToCircle,TableToRectangle ]
