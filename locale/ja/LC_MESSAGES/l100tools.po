@@ -269,4 +269,11 @@ msgstr "中心Yフィールド"
 msgid "radius"
 msgstr "半径フィールド [入力空間参照単位]"
 
+msgid "Hexgonal Grid"
+msgstr "六角形グリッドの作成"
 
+msgid "Creates a hexagonal grid polygon feature class from the specified feature layer extent."
+msgstr "指定したレイヤの範囲から六角形ポリゴンを作成します."
+
+msgid "Hexagonal Grid Size"
+msgstr "六角形ポリゴン辺長"
