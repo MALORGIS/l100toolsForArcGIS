@@ -277,3 +277,15 @@ msgstr "指定したレイヤの範囲から六角形ポリゴンを作成しま
 
 msgid "Hexagonal Grid Size"
 msgstr "六角形ポリゴン辺長"
+
+msgid "Shift Feature"
+msgstr "フィーチャの平行移動"
+
+msgid "Creates a shift feature class from specific xy shift."
+msgstr "指定されたxy移動量からシフトフィーチャクラスを生成します"
+
+msgid "x shift"
+msgstr "X移動量"
+
+msgid "y shift"
+msgstr "Y移動量"
