@@ -289,3 +289,12 @@ msgstr "X移動量"
 
 msgid "y shift"
 msgstr "Y移動量"
+
+msgid "Feature To UTF-8 WKT CSV"
+msgstr "フィーチャー→UTF-8 WKT CSV"
+
+msgid "Creates a UTF-8 WKT CSV from specified features."
+msgstr "指定したフィーチャからUTF-8 WKT CSVを作成します."
+
+msgid "Output CSV"
+msgstr "出力CSV"
