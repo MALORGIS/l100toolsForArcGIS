@@ -13,6 +13,7 @@ from AddPointCountField import AddPointCountField
 from AddXYField import AddXYField
 from Erase import Erase
 from ExtractFeatureAttachments import ExtractFeatureAttachments
+from FeatureToWKTCSV import FeatureToWKTCSV
 from FeatureVerticesToPoints import FeatureVerticesToPoints
 from FillDoughnut import FillDoughnut
 from MinimumBoundingGeometry import MinimumBoundingGeometry
@@ -42,4 +43,4 @@ class Toolbox(object):
     self.alias = "l100tools"
 
     #TO:ツール増加時は配列に加える。
-    self.tools = [ AddAreaField,AddExtentField,AddGeometryHashField,AddLengthField,AddPointCountField,AddXYField,Erase,ExtractFeatureAttachments,FeatureVerticesToPoints,FillDoughnut,MinimumBoundingGeometry,PointToPolygon,PointToPolyline,PolygonToPoint,PolygonToPolyline,PolylineToCrossPoint,PolylineToPolygon,RandomPoints,RasterCellValueToPoint,ShiftFeature,SpatiliteDelaunayTriangulation,SpatiliteHexagonalGrid,SpatiliteNear,SpatiliteVoronojDiagram,SpiderDiagrams,TableLayerToJSON,TableToCircle,TableToRectangle ]
+    self.tools = [ AddAreaField,AddExtentField,AddGeometryHashField,AddLengthField,AddPointCountField,AddXYField,Erase,ExtractFeatureAttachments,FeatureToWKTCSV,FeatureVerticesToPoints,FillDoughnut,MinimumBoundingGeometry,PointToPolygon,PointToPolyline,PolygonToPoint,PolygonToPolyline,PolylineToCrossPoint,PolylineToPolygon,RandomPoints,RasterCellValueToPoint,ShiftFeature,SpatiliteDelaunayTriangulation,SpatiliteHexagonalGrid,SpatiliteNear,SpatiliteVoronojDiagram,SpiderDiagrams,TableLayerToJSON,TableToCircle,TableToRectangle ]
