@@ -31,9 +31,9 @@ for tool in tools:
   tooldict[tool.category].append(tool.label)
 
 for cat in tooldict.keys():
-  print cat
+  print((cat + "  ").decode('utf-8'))
   for tool in tooldict[cat]:
-    print "  -" + tool
+    print(("  -" + tool + "  ").decode('utf-8'))
 
 
 "@, $sb.ToString(),[String]::Join("(),", $names.ToArray())), [System.Text.Encoding]::UTF8);

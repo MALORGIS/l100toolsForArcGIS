@@ -31,6 +31,8 @@ Fields
   -Raster Cell Value to Point Attribute  
 SpatiaLite  
   -Point To DelaunayTriangulation  
+  -Hexgonal Grid  
+  -Near Line(self/target)  
   -Point To Voronoi Diagram  
 TransformationShapes  
   -Erase  
@@ -44,6 +46,11 @@ TransformationShapes
   -Polyline To CrossPoint  
   -Polyline To Polygon  
   -Random Points  
+  -Shift Feature  
   -Spider Diagrams  
 DataManagement  
+  -Extract Feature Attachments  
+  -Feature To UTF-8 WKT CSV  
   -Table/Layer to JSON  
+  -Table To Circle  
+  -Table To Rectangle  
