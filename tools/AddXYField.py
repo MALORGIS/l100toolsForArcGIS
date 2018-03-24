@@ -46,31 +46,32 @@ class AddXYField(object):
     return True
 
   def updateParameters(self, parameters):
-    inFeatures = parameters[0].valueAsText
-    if (inFeatures):
-      inDesc = arcpy.Describe(inFeatures)
-      if (inDesc.dataType == "FeatureLayer"):
-        inDesc = inDesc.featureClass
+    if parameters[0]:
+      inFeatures = parameters[0].valueAsText
+      if (inFeatures):
+        inDesc = arcpy.Describe(inFeatures)
+        if (inDesc.dataType == "FeatureLayer"):
+          inDesc = inDesc.featureClass
 
-      ptLocation = parameters[1]
+        ptLocation = parameters[1]
 
-      if ( (inDesc.shapeType == "Polygon" or
+        if ( (inDesc.shapeType == "Polygon" or
             inDesc.shapeType == "Multipoint") and not "CENTROID" in ptLocation.filter.list):
-        ptLocation.filter.list = ["CENTROID", "LABELPOINT", "TRUECENTROID"]
-        ptLocation.enabled = True
-        ptLocation.value = "centroid"
+          ptLocation.filter.list = ["CENTROID", "LABELPOINT", "TRUECENTROID"]
+          ptLocation.enabled = True
+          ptLocation.value = "centroid"
         
-      elif (inDesc.shapeType == "Polyline" and not "START" in ptLocation.filter.list):
-        ptLocation.filter.list = ["START", "MID", "END"]
-        ptLocation.enabled = True
-        ptLocation.value = "START"
+        elif (inDesc.shapeType == "Polyline" and not "START" in ptLocation.filter.list):
+          ptLocation.filter.list = ["START", "MID", "END"]
+          ptLocation.enabled = True
+          ptLocation.value = "START"
         
-      elif (inDesc.shapeType == "Point" and not "POINT" in ptLocation.filter.list):
-        ptLocation.filter.list = ["POINT"]
-        ptLocation.enabled = False
-        ptLocation.value = "POINT"
+        elif (inDesc.shapeType == "Point" and not "POINT" in ptLocation.filter.list):
+          ptLocation.filter.list = ["POINT"]
+          ptLocation.enabled = False
+          ptLocation.value = "POINT"
         
-      parameters[1] = ptLocation
+        parameters[1] = ptLocation
     
     return
   

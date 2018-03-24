@@ -74,19 +74,20 @@ class AddAreaField(object):
     return
   
   def updateMessages(self, parameters):
-    inFeatures = parameters[0].valueAsText
+
+    if (parameters[0]):
+      inFeatures = parameters[0].valueAsText
     
-    if (inFeatures):
-      inDesc = arcpy.Describe(inFeatures)
-      if (inDesc.dataType == "FeatureLayer"):
-        inDesc = inDesc.featureClass
-      # message clear ( check fieldname )
-      parameters[0].clearMessage()
-      fields = arcpy.ListFields(inFeatures)
-      for field in fields:
-        if (field.name.upper() == "AREA"):
-          parameters[0].setWarningMessage(_("The value of the [Area] field will be overwritten."))
-          break
+      if (inFeatures):
+        inDesc = arcpy.Describe(inFeatures)
+        if (inDesc.dataType == "FeatureLayer"):
+          inDesc = inDesc.featureClass
+        
+        fields = arcpy.ListFields(inFeatures)
+        for field in fields:
+          if (field.name.upper() == "AREA"):
+            parameters[0].setWarningMessage(_("The value of the [Area] field will be overwritten."))
+            break
 
     return
   
