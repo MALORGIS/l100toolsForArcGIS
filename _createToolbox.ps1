@@ -8,17 +8,17 @@ Get-ChildItem -Include *.py -Exclude _*.py,test.py -Recurse | ForEach-Object {
 
 $sb = [System.Text.StringBuilder]::new()
 ForEach( $name in $names) {
-  $sb.AppendLine([String]::Format("from {0} import {0}", $name))
+  $sb.AppendLine([String]::Format("from tools.{0} import {0}", $name))
 }
 
 [System.IO.File]::WriteAllText("l100tools.pyt", 
 [String]::Format(@"
 # -*- coding: UTF-8 -*-
 
-import sys,os
-sys.path.append(os.path.dirname(os.path.abspath(__file__)) + '/tools')
+#import sys,os
+#sys.path.append(os.path.dirname(os.path.abspath(__file__)) + '/tools')
 
-import _SetupGetText
+import tools._SetupGetText
 
 {0}
 

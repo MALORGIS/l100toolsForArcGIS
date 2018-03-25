@@ -9,7 +9,7 @@ import shutil
 
 from contextlib import closing
 
-from _tempSqlite import _tempSqlite
+from tools._tempSqlite import _tempSqlite
 
 #ツール定義
 class SpatiliteDelaunayTriangulation(object):

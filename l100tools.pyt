@@ -1,39 +1,39 @@
 ﻿# -*- coding: UTF-8 -*-
 
-import sys,os
-sys.path.append(os.path.dirname(os.path.abspath(__file__)) + '/tools')
+#import sys,os
+#sys.path.append(os.path.dirname(os.path.abspath(__file__)) + '/tools')
 
-import _SetupGetText
+import tools._SetupGetText
 
-from AddAreaField import AddAreaField
-from AddExtentField import AddExtentField
-from AddGeometryHashField import AddGeometryHashField
-from AddLengthField import AddLengthField
-from AddPointCountField import AddPointCountField
-from AddXYField import AddXYField
-from Erase import Erase
-from ExtractFeatureAttachments import ExtractFeatureAttachments
-from FeatureToWKTCSV import FeatureToWKTCSV
-from FeatureVerticesToPoints import FeatureVerticesToPoints
-from FillDoughnut import FillDoughnut
-from MinimumBoundingGeometry import MinimumBoundingGeometry
-from PointToPolygon import PointToPolygon
-from PointToPolyline import PointToPolyline
-from PolygonToPoint import PolygonToPoint
-from PolygonToPolyline import PolygonToPolyline
-from PolylineToCrossPoint import PolylineToCrossPoint
-from PolylineToPolygon import PolylineToPolygon
-from RandomPoints import RandomPoints
-from RasterCellValueToPoint import RasterCellValueToPoint
-from ShiftFeature import ShiftFeature
-from SpatiliteDelaunayTriangulation import SpatiliteDelaunayTriangulation
-from SpatiliteHexagonalGrid import SpatiliteHexagonalGrid
-from SpatiliteNear import SpatiliteNear
-from SpatiliteVoronojDiagram import SpatiliteVoronojDiagram
-from SpiderDiagrams import SpiderDiagrams
-from TableLayerToJSON import TableLayerToJSON
-from TableToCircle import TableToCircle
-from TableToRectangle import TableToRectangle
+from tools.AddAreaField import AddAreaField
+from tools.AddExtentField import AddExtentField
+from tools.AddGeometryHashField import AddGeometryHashField
+from tools.AddLengthField import AddLengthField
+from tools.AddPointCountField import AddPointCountField
+from tools.AddXYField import AddXYField
+from tools.Erase import Erase
+from tools.ExtractFeatureAttachments import ExtractFeatureAttachments
+from tools.FeatureToWKTCSV import FeatureToWKTCSV
+from tools.FeatureVerticesToPoints import FeatureVerticesToPoints
+from tools.FillDoughnut import FillDoughnut
+from tools.MinimumBoundingGeometry import MinimumBoundingGeometry
+from tools.PointToPolygon import PointToPolygon
+from tools.PointToPolyline import PointToPolyline
+from tools.PolygonToPoint import PolygonToPoint
+from tools.PolygonToPolyline import PolygonToPolyline
+from tools.PolylineToCrossPoint import PolylineToCrossPoint
+from tools.PolylineToPolygon import PolylineToPolygon
+from tools.RandomPoints import RandomPoints
+from tools.RasterCellValueToPoint import RasterCellValueToPoint
+from tools.ShiftFeature import ShiftFeature
+from tools.SpatiliteDelaunayTriangulation import SpatiliteDelaunayTriangulation
+from tools.SpatiliteHexagonalGrid import SpatiliteHexagonalGrid
+from tools.SpatiliteNear import SpatiliteNear
+from tools.SpatiliteVoronojDiagram import SpatiliteVoronojDiagram
+from tools.SpiderDiagrams import SpiderDiagrams
+from tools.TableLayerToJSON import TableLayerToJSON
+from tools.TableToCircle import TableToCircle
+from tools.TableToRectangle import TableToRectangle
 
 
 class Toolbox(object):
