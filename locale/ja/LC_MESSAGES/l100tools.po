@@ -298,3 +298,27 @@ msgstr "指定したフィーチャからUTF-8 WKT CSVを作成します."
 
 msgid "Output CSV"
 msgstr "出力CSV"
+
+msgid "FieldInfo to CSV"
+msgstr "フィールド情報→CSV"
+
+msgid "Creates a Fields information CSV from specified features."
+msgstr "指定したフィーチャからフィールド情報CSVを作成します。"
+
+msgid "Input Table"
+msgstr "入力テーブル"
+
+msgid "FieldInfo Table"
+msgstr "フィールド情報テーブル"
+
+msgid "FieldNameField"
+msgstr "名称フィールド"
+
+msgid "FieldAliasField"
+msgstr "別名フィールド"
+
+msgid "Set Field Alias from Table"
+msgstr "テーブルからフィールド別名を設定"
+
+msgid "Set field alias from table."
+msgstr ""テーブルからフィールド別名を設定"
