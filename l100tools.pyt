@@ -15,6 +15,7 @@ from tools.Erase import Erase
 from tools.ExtractFeatureAttachments import ExtractFeatureAttachments
 from tools.FeatureToWKTCSV import FeatureToWKTCSV
 from tools.FeatureVerticesToPoints import FeatureVerticesToPoints
+from tools.FieldInfoToCSV import FieldInfoToCSV
 from tools.FillDoughnut import FillDoughnut
 from tools.MinimumBoundingGeometry import MinimumBoundingGeometry
 from tools.PointToPolygon import PointToPolygon
@@ -25,6 +26,7 @@ from tools.PolylineToCrossPoint import PolylineToCrossPoint
 from tools.PolylineToPolygon import PolylineToPolygon
 from tools.RandomPoints import RandomPoints
 from tools.RasterCellValueToPoint import RasterCellValueToPoint
+from tools.SetFieldAliasFromTable import SetFieldAliasFromTable
 from tools.ShiftFeature import ShiftFeature
 from tools.SpatiliteDelaunayTriangulation import SpatiliteDelaunayTriangulation
 from tools.SpatiliteHexagonalGrid import SpatiliteHexagonalGrid
@@ -43,4 +45,4 @@ class Toolbox(object):
     self.alias = "l100tools"
 
     #TO:ツール増加時は配列に加える。
-    self.tools = [ AddAreaField,AddExtentField,AddGeometryHashField,AddLengthField,AddPointCountField,AddXYField,Erase,ExtractFeatureAttachments,FeatureToWKTCSV,FeatureVerticesToPoints,FillDoughnut,MinimumBoundingGeometry,PointToPolygon,PointToPolyline,PolygonToPoint,PolygonToPolyline,PolylineToCrossPoint,PolylineToPolygon,RandomPoints,RasterCellValueToPoint,ShiftFeature,SpatiliteDelaunayTriangulation,SpatiliteHexagonalGrid,SpatiliteNear,SpatiliteVoronojDiagram,SpiderDiagrams,TableLayerToJSON,TableToCircle,TableToRectangle ]
+    self.tools = [ AddAreaField,AddExtentField,AddGeometryHashField,AddLengthField,AddPointCountField,AddXYField,Erase,ExtractFeatureAttachments,FeatureToWKTCSV,FeatureVerticesToPoints,FieldInfoToCSV,FillDoughnut,MinimumBoundingGeometry,PointToPolygon,PointToPolyline,PolygonToPoint,PolygonToPolyline,PolylineToCrossPoint,PolylineToPolygon,RandomPoints,RasterCellValueToPoint,SetFieldAliasFromTable,ShiftFeature,SpatiliteDelaunayTriangulation,SpatiliteHexagonalGrid,SpatiliteNear,SpatiliteVoronojDiagram,SpiderDiagrams,TableLayerToJSON,TableToCircle,TableToRectangle ]
