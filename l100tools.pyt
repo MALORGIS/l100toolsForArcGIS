@@ -29,6 +29,7 @@ from tools.RasterCellValueToPoint import RasterCellValueToPoint
 from tools.SetFieldAliasFromTable import SetFieldAliasFromTable
 from tools.ShiftFeature import ShiftFeature
 from tools.SpatiliteDelaunayTriangulation import SpatiliteDelaunayTriangulation
+from tools.SpatiliteFillDoughnut import SpatiliteFillDoughnut
 from tools.SpatiliteHexagonalGrid import SpatiliteHexagonalGrid
 from tools.SpatiliteNear import SpatiliteNear
 from tools.SpatiliteVoronojDiagram import SpatiliteVoronojDiagram
@@ -45,4 +46,4 @@ class Toolbox(object):
     self.alias = "l100tools"
 
     #TO:ツール増加時は配列に加える。
-    self.tools = [ AddAreaField,AddExtentField,AddGeometryHashField,AddLengthField,AddPointCountField,AddXYField,Erase,ExtractFeatureAttachments,FeatureToWKTCSV,FeatureVerticesToPoints,FieldInfoToCSV,FillDoughnut,MinimumBoundingGeometry,PointToPolygon,PointToPolyline,PolygonToPoint,PolygonToPolyline,PolylineToCrossPoint,PolylineToPolygon,RandomPoints,RasterCellValueToPoint,SetFieldAliasFromTable,ShiftFeature,SpatiliteDelaunayTriangulation,SpatiliteHexagonalGrid,SpatiliteNear,SpatiliteVoronojDiagram,SpiderDiagrams,TableLayerToJSON,TableToCircle,TableToRectangle ]
+    self.tools = [ AddAreaField,AddExtentField,AddGeometryHashField,AddLengthField,AddPointCountField,AddXYField,Erase,ExtractFeatureAttachments,FeatureToWKTCSV,FeatureVerticesToPoints,FieldInfoToCSV,FillDoughnut,MinimumBoundingGeometry,PointToPolygon,PointToPolyline,PolygonToPoint,PolygonToPolyline,PolylineToCrossPoint,PolylineToPolygon,RandomPoints,RasterCellValueToPoint,SetFieldAliasFromTable,ShiftFeature,SpatiliteDelaunayTriangulation,SpatiliteFillDoughnut,SpatiliteHexagonalGrid,SpatiliteNear,SpatiliteVoronojDiagram,SpiderDiagrams,TableLayerToJSON,TableToCircle,TableToRectangle ]
